@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Archivio Filler</title>
+</head>
+
+<body>
+<div class="background-blur"></div>
+<div class="text-background">
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="../home.html">
+                    <h1>Archivio Filler</h1>
+                </a>
+                <a href="index.html"><button style="font-size:24px"><i class="fa fa-bars"></i><span>Lista Anime</span></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/blackclover.jpeg" alt="Immagine di Black Clover">
+            </div>
+            <div class="about card">
+                <h1>Black Clover Lista Episodi</h1>
+                <br>
+                <p>
+                    Black Clover è una serie anime in corso iniziata nel 2017. Finora sono stati trasmessi 165 episodi di Black Clover. Con un totale di 17 episodi filler segnalati, Black Clover ha una percentuale di filler molto bassa, pari al 10%.<br><br>In un mondo dove la magia è tutto, Asta e Yuno vengono trovati abbandonati in una chiesa lo stesso giorno. Mentre Yuno è dotato di eccezionali poteri magici, Asta è l'unico in questo mondo senza alcuno. All'età di quindici anni, entrambi ricevono grimori, libri magici che amplificano la magia del loro possessore. Quello di Asta è un raro Grimorio di Anti-Magia che annulla e respinge gli incantesimi del suo avversario. Essendo rivali opposti ma buoni, Yuno e Asta sono pronti per le sfide più difficili per realizzare il loro sogno comune di diventare il Re dei Maghi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Mostra tutti gli episodi</button>
+                <button id="filler">Mostra episodi filler</button>
+                <button id="canon">Mostra episodi canonici</button>
+            </div>
+            <div class="manga card">
+                <h2>Episodi Manga Canon:</h2>
+                <br>
+                <p>
+                    1, 4-7, 10-12, 14-28, 31-54, 57-65, 67, 70-81, 83-101, 103-122, 126-129, 158-162
+                </p>
+            </div>
+            <div class="mixed card">
+                <h2>Episodi Canon/Filler Misti:</h2>
+                <br>
+                <p>
+                    2, 8-9, 30, 69, 102
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Episodi Filler:</h2>
+                <br>
+                <p>
+                    29, 66, 68, 82, 123-125, 131, 134-135, 142-148
+                </p>
+            </div>
+            <div class="anime card">
+                <h2>Episodi Anime Canon:</h2>
+                <br>
+                <p>
+                    3, 13, 55-56, 130, 132-133, 136-141, 149-157
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Black Clover Lista Episodi</h1>
+            <div class="flex">
+                <button id="fetch">Mostra Episodi</button>
+                <div>
+                    <label>Vai all'episodio: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container flex">
+            <h1>Archivio Filler</h1>
+        </div>
+    </footer>
+    <div data-animeName="black_clover" id="animeName"></div>
+    <script src="../JS/onepiece.js"></script>
+    <script>
+        const animeName = "black_clover"; 
+    </script>
+</div>
+</body>
+
+</html>

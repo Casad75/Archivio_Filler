@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Archivio Filler</title>
+</head>
+
+<body>
+<div class="background-blur"></div>
+<div class="text-background">
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="../home.html">
+                    <h1>Archivio Filler</h1>
+                </a>
+                <a href="index.html"><button style="font-size:24px"><i class="fa fa-bars"></i><span>Lista Anime</span></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/onepunchman.jpg" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>One-Punch Man Lista Filler</h1>
+                <br>
+                <p>
+                    One-Punch Man è una serie anime in corso iniziata nel 2015. Finora sono stati trasmessi 24 episodi di One-Punch Man. One-Punch Man non ha alcun Filler segnalato.<br><br>Saitama è un eroe che è diventato un eroe solo per divertimento. Dopo tre anni di
+                    Grazie all'addestramento “speciale”, però, è diventato così forte da essere praticamente invincibile. In effetti, è troppo forte: anche i suoi avversari più potenti vengono eliminati con un solo pugno, e si scopre che essere devastantemente potente è in realtà
+                    una specie di noia.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Mostra tutti gli episodi</button>
+                <button id="filler">Mostra episodi Filler</button>
+                <button id="canon">Mostra episodi canonici</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Episodi Canon:</h2>
+                <br>
+                <p>
+                    1-24
+                </p>
+            </div>
+            <!-- <div class="mixed card">
+                <h2>Mixed Canon/Filler Episodes:</h2>
+                <br>
+                <p>
+                    26
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Filler Episodes:</h2>
+                <br>
+                <p>
+                    25
+                </p>
+            </div>
+            <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    50-51, 93, 213-216, 418-420, 453-456, 497-499, 506, 737
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>One-Punch Man Lista Episodi</h1>
+            <div class="flex">
+                <button id="fetch">Mostra Episodi</button>
+                <div>
+                    <label>Vai all'episodio: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container flex">
+            <h1>Archivio Filler</h1>
+        </div>
+    </footer>
+    <div data-animeName="one_punch_man" id="animeName"></div>
+    <script src="../JS/onepiece.js"></script>
+    <script>
+        const animeName = "one_punch_man"; 
+    </script>
+</div>
+</body>
+
+</html>

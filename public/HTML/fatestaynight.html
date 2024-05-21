@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Archivio Filler</title>
+</head>
+
+<body>
+<div class="background-blur"></div>
+<div class="text-background">
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="../home.html">
+                    <h1>Archivio Filler</h1>
+                </a>
+                <a href="index.html"><button style="font-size:24px"><i class="fa fa-bars"></i><span>Lista Anime</span></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/fatesn.jpg" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Fate/stay night Lista Filler</h1>
+                <br>
+                <p>
+                    Fate/stay night è stata una serie anime trasmessa dal 2006 al 2006. In totale sono stati trasmessi 24 episodi di Fate/stay night. Con un totale di 3 episodi Filler segnalati, Fate/stay night ha una percentuale di riempimento bassa, pari al 13%.<br><br>\xa0<br><br>Raised
+                    da un misterioso stregone dopo la terribile morte dei suoi genitori, Shirou Emiya ha appena iniziato ad aiutare gli altri usando i piccoli bocconcini di magia che ha imparato. Tuttavia, quando viene improvvisamente coinvolto in una battaglia tra due più potenti
+                    Magus, Shirou si ritrova a eseguire un incantesimo al di sopra delle sue capacità previste, evocando il bellissimo spirito guerriero Saber per proteggerlo! Ma la sicurezza è solo momentanea poiché Shirou e Saber si ritrovano ora catapultati in un mondo segreto
+                    di magia oscura e sfide mortali: un duello all'ultimo sangue senza esclusione di colpi conosciuto come la Guerra del Santo Graal! In gioco: un premio di potere inimmaginabile. Ma riusciranno gli inesperti Shirou e Saber a sopravvivere abbastanza a lungo da partecipare al concorso?
+                    Per prima cosa dovranno resistere a ondate di tradimenti e omicidi, anche se Shirou si affretta a imparare tutto ciò che ha bisogno di sapere per rimanere in vita mentre sette squadre di Magus e Servitori dello Spirito si affrontano in un combattimento mortale!\xa0<br><br >(adattato
+                    dalla Visual Novel di Type-Moon)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Mostra tutti gli episodi</button>
+                <button id="filler">Mostra episodi Filler</button>
+                <button id="canon">Mostra episodi canonici</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Episodi Canon:</h2>
+                <br>
+                <p>
+                    1-5, 7-16, 19-24
+                </p>
+            </div>
+            <!-- <div class="mixed card">
+                <h2>Mixed Canon/Filler Episodes:</h2>
+                <br>
+                <p>
+                    26
+                </p>
+            </div> -->
+            <div class="filler card">
+                <h2>Episodi Filler:</h2>
+                <br>
+                <p>
+                    6, 17-18
+                </p>
+            </div>
+            <!-- <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    50-51, 93, 213-216, 418-420, 453-456, 497-499, 506, 737
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Fate/stay night Lista Episodi</h1>
+            <div class="flex">
+                <button id="fetch">Mostra Episodi</button>
+                <div>
+                    <label>Vai all'episodio: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container flex">
+            <h1>Archivio Filler</h1>
+        </div>
+    </footer>
+    <div data-animeName="fatestay_night" id="animeName"></div>
+    <script src="../JS/onepiece.js"></script>
+    <script>
+        const animeName = "fatestay_night"; 
+    </script>
+</div>
+</body>
+
+</html>

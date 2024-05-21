@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Archivio Filler</title>
+</head>
+
+<body>
+<div class="background-blur"></div>
+<div class="text-background">
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="../home.html">
+                    <h1>Archivio Filler</h1>
+                </a>
+                <a href="index.html"><button style="font-size:24px"><i class="fa fa-bars"></i><span>Lista Anime</span></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/fairytale.jpg" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Fairy Tail Lista Filler</h1>
+                <br>
+                <p>
+                    Fairy Tail è stata una serie anime andata in onda dal 2009 al 2019. In totale sono stati trasmessi 328 episodi di Fairy Tail. Con un totale di 63 episodi di Filler segnalati, Fairy Tail ha una percentuale di riempimento bassa del 19%.<br><br>La storia segue Lucy Heartfilla
+                    che è determinato a unirsi alla famigerata magica gilda Fairy Tail. Durante un audace salvataggio, incontra Natsu che fa parte della gilda e alla fine le offre un posto. Diventano compagni di squadra che svolgono varie missioni per la Fata
+                    Gilda della coda. Preparati per un'avventura ricca di azione!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Mostra tutti gli episodi</button>
+                <button id="filler">Mostra episodi Filler</button>
+                <button id="canon">Mostra episodi canonici</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Episodi Canon:</h2>
+                <br>
+                <p>
+                    1-8, 10-18, 21-48, 51-68, 76-124, 152-200, 227-245, 247-254, 257-259, 261-267, 269, 271-311, 313-328
+                </p>
+            </div>
+            <div class="mixed card">
+                <h2>Mixed Episodi Canon/Filler:</h2>
+                <br>
+                <p>
+                    20, 151, 201, 255, 260, 270, 312
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Epsiodi Filler:</h2>
+                <br>
+                <p>
+                    9, 19, 49-50, 69-75, 125-150, 202-226, 268
+                </p>
+            </div>
+            <div class="anime card">
+                <h2>Anime Episodi Canon:</h2>
+                <br>
+                <p>
+                    246, 256
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Fairy Tail Lista Episodi</h1>
+            <div class="flex">
+                <button id="fetch">Mostra Episodi</button>
+                <div>
+                    <label>Vai all'episodio: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container flex">
+            <h1>Archivio Filler</h1>
+        </div>
+    </footer>
+    <div data-animeName="fairy_tail" id="animeName"></div>
+    <script src="../JS/onepiece.js"></script>
+    <script>
+        const animeName = "fairy_tail"; 
+    </script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Archivio Filler</title>
+</head>
+
+<body>
+<div class="background-blur"></div>
+<div class="text-background">
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="../home.html">
+                    <h1>Archivio Filler</h1>
+                </a>
+                <a href="index.html"><button style="font-size:24px"><i class="fa fa-bars"></i><span>Lista Anime</span></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/slamdunk.jpg" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Slam Dunk Lista Filler</h1>
+                <br>
+                <p>
+                    Slam Dunk è stata una serie anime andata in onda dal 1993 al 1996. In totale sono stati trasmessi 101 episodi di Slam Dunk. Con un totale di 10 episodi di Filler segnalati, Slam Dunk ha una percentuale di riempimento molto bassa del 10%.<br><br>Hanamichi Sakuragi è un
+                    delinquente e capo di una banda. Sakuragi è molto impopolare tra le ragazze, essendo stato rifiutato ben cinquanta volte. Durante il suo primo anno alla Shohoku High School, incontra Haruko Akagi, la ragazza dei suoi sogni, ed è felicissimo.
+                    quando non è disgustata o spaventata da lui come tutte le altre ragazze a cui ha chiesto di uscire.<br><br>Haruko, riconoscendo l'atletismo di Sakuragi, lo presenta alla squadra di basket di Shohoku. All'inizio Sakuragi è riluttante a unirsi alla squadra,
+                    poiché non ha alcuna esperienza pregressa nello sport e pensa che il basket sia un gioco per perdenti perché il suo cinquantesimo rifiuto è stato a favore di un giocatore di basket. Sakuragi, nonostante la sua estrema immaturità e il suo carattere focoso, dimostra di avere un talento naturale
+                    atleta e si unisce alla squadra, principalmente nella speranza di impressionare e avvicinarsi ad Haruko.<br><br>Amicizie e rivalità verranno create e spezzate in questo classico di tutti i tempi!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Mostra tutti gli episodi</button>
+                <button id="filler">Mostra episodi Filler</button>
+                <button id="canon">Mostra episodi canonici</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Episodi Canon:</h2>
+                <br>
+                <p>
+                    1-46, 48-84, 87-89, 91, 93-94, 96
+                </p>
+            </div>
+            <div class="mixed card">
+                <h2>Mixed Episodi Canon/Filler:</h2>
+                <br>
+                <p>
+                    90
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Episodi Filler:</h2>
+                <br>
+                <p>
+                    47, 85-86, 92, 95, 97-101
+                </p>
+            </div>
+            <!-- <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    50-51, 93, 213-216, 418-420, 453-456, 497-499, 506, 737
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Slam Dunk Lista Episodi</h1>
+            <div class="flex">
+                <button id="fetch">Mostra Episodi</button>
+                <div>
+                    <label>Vai all'episodio: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container flex">
+            <h1>Archivio Filler</h1>
+        </div>
+    </footer>
+    <div data-animeName="slam_dunk_0" id="animeName"></div>
+    <script src="../JS/onepiece.js"></script>
+    <script>
+        const animeName = "slam_dunk_0"; 
+    </script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Archivio Filler</title>
+</head>
+
+<body>
+<div class="background-blur"></div>
+<div class="text-background">
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="../home.html">
+                    <h1>Archivio Filler</h1>
+                </a>
+                <a href="index.html"><button style="font-size:24px"><i class="fa fa-bars"></i><span>Lista Anime</span></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/codegeass.png" alt="Immagine di Code Geass">
+            </div>
+            <div class="about card">
+                <h1>Lista Filler di Code Geass</h1>
+                <br>
+                <p>
+                    Code Geass è stata una serie anime trasmessa dal 2006 al 2016. In totale sono stati trasmessi 55 episodi di Code Geass. Code Geass non ha Filler segnalati.<br><br>Lelouch, un principe imperiale esiliato di Britannia che si finge
+                    uno studente, si trova coinvolto nel conflitto in corso per la nazione insulare. Attraverso un incontro fortuito con una misteriosa ragazza di nome C.C., Lelouch ottiene il suo Geass, il potere del re. Ora dotato di un dominio assoluto
+                    su qualsiasi persona, Lelouch potrebbe finalmente realizzare il suo obiettivo di abbattere Britannia dall'interno!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Mostra tutti gli episodi</button>
+                <button id="filler">Mostra episodi Filler</button>
+                <button id="canon">Mostra episodi canonici</button>
+            </div>
+            <div class="manga card">
+                <h2>Episodi Canon del Manga:</h2>
+                <br>
+                <p>
+                    1-55
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Code Geass Lista Episodi</h1>
+            <div class="flex">
+                <button id="fetch">Mostra episodi</button>
+                <div>
+                    <label>Vai all'episodio: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container flex">
+            <h1>Archivio Filler</h1>
+        </div>
+    </footer>
+    <div data-animeName="code_geass" id="animeName"></div>
+    <script src="../JS/onepiece.js"></script>
+    <script>
+        const animeName = "code_geass"; 
+    </script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Archivio Filler</title>
+</head>
+
+<body>
+<div class="background-blur"></div>
+<div class="text-background">
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="../home.html">
+                    <h1>Archivio Filler</h1>
+                </a>
+                <a href="index.html"><button style="font-size:24px"><i class="fa fa-bars"></i><span>Lista Anime</span></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/kimetsunoyaiba.jpg" alt="Immagine di Demon Slayer: Kimetsu no Yaiba">
+            </div>
+            <div class="about card">
+                <h1>Lista Filler di Demon Slayer: Kimetsu no Yaiba</h1>
+                <br>
+                <p>
+                    Demon Slayer: Kimetsu no Yaiba è una serie anime in corso che è iniziata nel 2019. Finora sono stati trasmessi 26 episodi di Demon Slayer: Kimetsu no Yaiba. Demon Slayer: Kimetsu no Yaiba non ha Filler segnalati.<br><br>È il
+                    periodo Taisho in Giappone. Tanjiro, un ragazzo dal cuore gentile che vende carbone per vivere, scopre che la sua famiglia è stata massacrata da un demone. Per rendere le cose ancora peggiori, sua sorella minore Nezuko, l'unica
+                    sopravvissuta, è stata trasformata in un demone. Sebbene devastato da questa triste realtà, Tanjiro decide di diventare un "cacciatore di demoni" in modo da poter trasformare sua sorella di nuovo in un essere umano e uccidere
+                    il demone che ha massacrato la sua famiglia.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Mostra tutti gli episodi</button>
+                <button id="filler">Mostra episodi Filler</button>
+                <button id="canon">Mostra episodi canonici</button>
+            </div>
+            <div class="anime card">
+                <h2>Episodi Canon dell'Anime:</h2>
+                <br>
+                <p>
+                    1-26
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Demon Slayer: Kimetsu no Yaiba Lista Episodi</h1>
+            <div class="flex">
+                <button id="fetch">Mostra episodi</button>
+                <div>
+                    <label>Vai all'episodio: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container flex">
+            <h1>Archivio Filler</h1>
+        </div>
+    </footer>
+    <div data-animeName="demon_slayer_kimetsu_no_yaiba" id="animeName"></div>
+    <script src="../JS/onepiece.js"></script>
+    <script>
+        const animeName = "demon_slayer_kimetsu_no_yaiba"; 
+    </script>
+</div>
+</body>
+
+</html>

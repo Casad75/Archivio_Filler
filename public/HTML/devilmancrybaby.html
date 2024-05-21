@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Archivio Filler</title>
+</head>
+
+<body>
+<div class="background-blur"></div>
+<div class="text-background">
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="../home.html">
+                    <h1>Archivio Filler</h1>
+                </a>
+                <a href="index.html"><button style="font-size:24px"><i class="fa fa-bars"></i><span>Lista Anime</span></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/devilmancrybaby.jpg" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Devilman Crybaby Lista Filler</h1>
+                <br>
+                <p>
+                    Devilman Crybaby è stata una serie anime andata in onda dal 2018 al 2018. In totale sono stati trasmessi 10 episodi di Devilman Crybaby. Con un totale di 4 episodi Filler segnalati, Devilman Crybaby ha una percentuale di riempimento moderata del 40%.<br><br>In Giappone,
+                    Akira Fudo è uno studente regolare delle superiori. La sua vita viene sconvolta quando il suo migliore amico Ryo Asuka gli rivela che i demoni esistono.<br><br>Per combattere nella guerra e salvare l'umanità dai diavoli,\xa0Akira deve diventare un diavolo.
+                    Deve fondere il suo corpo con un demone e mantenere il suo cuore umano. Deve diventare un Devilman!<br><br>Questo è il primo anime di Devilman ad adattare completamente il manga.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Mostra tutti gli episodi</button>
+                <button id="filler">Mostra episodi Filler</button>
+                <button id="canon">Mostra episodi canonici</button>
+            </div>
+            <!-- <div class="manga card">
+                <h2>Manga Canon Episodes:</h2>
+                <br>
+                <p>
+                    1-24
+                </p>
+            </div> -->
+            <div class="mixed card">
+                <h2>Mixed Episodi Canon/Filler:</h2>
+                <br>
+                <p>
+                    1-2, 7-10
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Episodi Filler:</h2>
+                <br>
+                <p>
+                    3-6
+                </p>
+            </div>
+            <!-- <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    50-51, 93, 213-216, 418-420, 453-456, 497-499, 506, 737
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Devilman Crybaby Lista Episodi</h1>
+            <div class="flex">
+                <button id="fetch">Mostra Episodi</button>
+                <div>
+                    <label>Vai all'episodio: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container flex">
+            <h1>Archivio Filler</h1>
+        </div>
+    </footer>
+    <div data-animeName="devilman_crybaby" id="animeName"></div>
+    <script src="../JS/onepiece.js"></script>
+    <script>
+        const animeName = "devilman_crybaby"; 
+    </script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Archivio Filler</title>
+</head>
+
+<body>
+<div class="background-blur"></div>
+<div class="text-background">
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="../home.html">
+                    <h1>Archivio Filler</h1>
+                </a>
+                <a href="index.html"><button style="font-size:24px"><i class="fa fa-bars"></i><span>Lista Anime</span></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/dragonballz.png" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Dragon Ball Z Lista Filler</h1>
+                <br>
+                <p>
+                    Dragon Ball Z è stata una serie anime andata in onda dal 1989 al 1996. In totale sono stati trasmessi 291 episodi di Dragon Ball Z. Con un totale di 39 episodi di Filler segnalati, Dragon Ball Z ha una percentuale di riempimento bassa, pari al 13%.<br><br>Sono passati cinque anni
+                    da quando Piccolo Jr. è stato sconfitto all'ultimo Torneo più forte sotto il cielo. Goku adulto, insieme ai suoi compagni, difende la terra dai cattivi che vanno dai combattenti e conquistatori spaziali intergalattici, agli androidi innaturalmente potenti
+                    e creature magiche indistruttibili!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Mostra tutti gli episodi</button>
+                <button id="filler">Mostra episodi Filler</button>
+                <button id="canon">Mostra episodi canonici</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Episodi Canon:</h2>
+                <br>
+                <p>
+                    1-8, 17-38, 45-99, 101, 103-107, 118-123, 126-169, 172-173, 175-194, 200-201, 205-228, 230-250, 252-273, 275-286, 289-291
+                </p>
+            </div>
+            <div class="mixed card">
+                <h2>Mixed Episodi Canon/Filler:</h2>
+                <br>
+                <p>
+                    11, 204, 229, 251, 287
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Episodi Filler:</h2>
+                <br>
+                <p>
+                    9-10, 12-16, 39-44, 100, 102, 108-117, 124-125, 170-171, 174, 195-199, 202-203, 274, 288
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Dragon Ball Z Lista Episodi</h1>
+            <div class="flex">
+                <button id="fetch">Mostra Episodi</button>
+                <div>
+                    <label>Vai all'episodio:</label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="container flex">
+            <h1>Archivio Filler</h1>
+        </div>
+    </footer>
+    <div data-animeName="dragon_ball_z" id="animeName"></div>
+    <script src="../JS/onepiece.js"></script>
+    <script>
+        const animeName = "dragon_ball_z"; 
+    </script>
+    </div>
+    </body>
+    </html>
